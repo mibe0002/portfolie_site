@@ -86,7 +86,7 @@ html {
 body {
   /* backup hvis billede ikke virker */
   background-color: var(--background-cl);
-  background-image: url(../billeder/baggrunde/13311371_v602-nunoon-11-rippednotes.jpg);
+  background-image: url(../billeder/baggrunde/backgroundimage.webp);
   background-repeat: repeat-y;
   background-size: cover;
 
@@ -96,59 +96,15 @@ body {
   overflow: auto;
 }
 
-main {
-  margin: 10%;
-  flex: 1;
-}
-
 main a {
   font-family: var(--primary-font);
   text-decoration: none;
   color: inherit;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-image: url(../billeder/baggrunde/topframe.png);
-  background-repeat: repeat-x;
-  /* box-shadow: 0 0px 10px rgba(107, 162, 109, 0.3); */
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  margin-right: 5.5%;
-}
-/* 
-header nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  margin: 18% 0;
-  gap: 30px;
-  font-size: var(--body);
-  padding: 18% 32%;
-  background-color: var(--secondary-cl);
-  border-radius: 14px;
-  border: #783b54 dashed 3px;
-}*/
-
-.favicon_top {
-  margin-left: 5.5%;
-}
-
-.favicon_top img {
-  width: 45px;
-  border-radius: 14px;
-  box-shadow: 0 0 10px var(--shadow);
-}
-
-/* Menu mutual styles */
+/*
+************* menu ************
+*/
 .menu a {
   display: block;
   color: black;
@@ -156,34 +112,42 @@ header nav ul {
   transition: color 0.3s;
   text-align: center;
   font-family: var(--primary-font);
-  font-size: var(--font-h1ogbody-md);
-}
-
-.burger {
-  width: 30px;
-  cursor: pointer;
 }
 
 /*
-************* desktop styles ************
+ desktop styles
 */
+.favicon_top img {
+  width: 70px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px var(--shadow);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 140px;
+  background-image: url(../billeder/baggrunde/topframe.webp);
+  background-repeat: repeat-x;
+}
+
+header nav ul {
+  gap: 50px;
+}
+
 .menu {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.menu li {
-  margin-right: 20px;
-}
-
-.menu li:last-child {
-  margin-right: 0;
+.menu a {
+  font-size: var(--font-h1-d);
 }
 
 .menu a:hover {
   color: var(--primary-cl);
+  text-shadow: 0 0 30px var(--third-cl);
 }
 
 .burger {
@@ -193,33 +157,6 @@ header nav ul {
 /*
 ************* footer ************
 */
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-image: url(../billeder/baggrunde/botframe.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
-
-  font-size: var(--body-m);
-  font-family: var(--secondary-font);
-  text-align: center;
-
-  bottom: 0;
-  width: 100%;
-  padding: 0 5.5%;
-}
-
-.favicon_bot {
-  display: block;
-  padding: 0 20px;
-}
-
-.favicon_bot img {
-  width: 45px;
-  border-radius: 14px;
-  box-shadow: 0 0 10px var(--shadow);
-}
 
 .footer_menu li {
   width: 156.183px;
@@ -231,12 +168,6 @@ footer {
   margin: 10px 0;
 }
 
-.footer_menu li a {
-  list-style: none;
-  color: inherit;
-  text-decoration: none;
-}
-
 .footer_menu li,
 .footer_info li a,
 .footer_info li {
@@ -245,12 +176,43 @@ footer {
   text-decoration: none;
 }
 
-/* popup */
 #imageLink,
 #mail {
   font-style: italic;
 }
+/*
+desktop
+*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../billeder/baggrunde/botframe.webp);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  font-size: var(--font-h1ogbody-md);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 30px 30px;
+}
 
+.favicon_bot {
+  display: block;
+  padding: 0 0;
+}
+
+.favicon_bot img {
+  width: 70px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px var(--shadow);
+}
+
+.footer_menu li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* popup */
 .popup {
   display: none;
   position: fixed;
@@ -261,12 +223,12 @@ footer {
   background-color: var(--background-cl);
   border: 3px dashed var(--primary-cl);
   border-radius: 14px;
-  box-shadow: 0 0 10px var(--shadow);
+  box-shadow: 0 0 30px var(--shadow);
 
   width: 100%;
-  max-width: 500px;
+  max-width: 750px;
   height: 100%;
-  max-height: 80vh;
+  max-height: 90vh;
   /* så der scrolles hvis indhold "overflows" */
   overflow: auto;
 }
@@ -307,12 +269,46 @@ footer {
 ************* mobil styles ************
 */
 @media (max-width: 800px) {
+  main {
+    margin: 10%;
+    flex: 1;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../billeder/baggrunde/topframe.webp);
+    background-repeat: repeat-x;
+  }
+
+  .favicon_top {
+    margin-left: 5.5%;
+  }
+
+  .favicon_top img {
+    width: 45px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px var(--shadow);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-right: 5.5%;
+  }
+
   .menu {
     display: none;
   }
 
+  .menu a {
+    font-size: var(--font-h1ogbody-md);
+  }
+
   .burger {
     display: block;
+    width: 30px;
   }
 
   .burger .line {
@@ -352,68 +348,74 @@ footer {
     margin: 20px 10px;
   }
 
-  /* style inden for main */
-  /* to hoved knapper */
-  .twobuttons {
-    position: relative;
-    margin: 30px auto;
-    width: 70%;
-    border-radius: 28px;
-    box-shadow: 0 0 10px var(--shadow);
-  }
-
-  /* dropdown menu */
-  .ddicon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 8px auto;
-    width: 10%;
-    aspect-ratio: 14/11;
-
-    /* drop shadow til svg, da denne følger svg formen og ikke selve "kassen" */
-    filter: drop-shadow(0 0 0.75rem var(--shadow));
-
-    /* animation taget fra tema 4: Animation */
-    animation-name: pulse_kf;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-
-  @keyframes pulse_kf {
-    0% {
-      scale: 1;
-    }
-    100% {
-      scale: 1.1;
-    }
-  }
-
-  /* dropdown menu */
-  .dropdown li {
-    position: relative;
-    display: block;
-    margin: 14px auto;
-    padding: 10px;
-    width: 50%;
+  /* 
+  footer
+  */
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../billeder/baggrunde/botframe.webp);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    font-size: var(--body-m);
+    font-family: var(--secondary-font);
     text-align: center;
-    font-size: var(--font-h1ogbody-md);
+    bottom: 0;
+    width: 100%;
+    padding: 0 5.5%;
+  }
 
-    color: inherit;
-    border: dashed var(--third-cl);
+  .favicon_bot {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .favicon_bot img {
+    width: 45px;
     border-radius: 14px;
     box-shadow: 0 0 10px var(--shadow);
-    background-color: var(--secondary-cl);
   }
 
-  .dropdown ul {
-    display: none;
+  .footer_menu li a {
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
   }
 
-  .dropdown.active ul {
-    display: block;
+  /* popup */
+  .popup {
+    box-shadow: 0 0 10px var(--shadow);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 80vh;
+    overflow: auto;
+  }
+}
+
+/*
+************* desktop styles (ekstra som skulle stå i media) ************
+*/
+@media (min-width: 801px) {
+  main {
+    margin: 1%;
+    flex: 1;
+  }
+
+  .footer_menu ul,
+  .footer_info ul {
+    display: flex;
+  }
+
+  .footer_menu ul {
+    width: 613.083px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer_info li {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }

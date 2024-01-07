@@ -1,21 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="billeder/baggrunde/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="billeder/baggrunde/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="billeder/baggrunde/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="billeder/baggrunde/favicon_io/site.webmanifest">
+
+    <title>Projekter</title>
 </head>
 
 <body>
     <header>
+        <div class="favicon_top">
+            <a href="index.html"><img src="billeder/baggrunde/Favicon.svg" alt="Favicon"></a>
+        </div>
 
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">♡ Forside ♡</a></li>
+                <li><a href="portfolio.html">♡ Projekter ♡</a></li>
+                <li><a href="om_mig.html">♡ Om mig ♡</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <h1>Mine projekter</h1>
 
-        <a href="https://mivanna.dk/kea/04_animation/website/"></a>
+        <p>Velkommen til min projekt side, her er mine projekter opdelt efter tema.
+            Du kan klikke på hvert projekt for at lære mere om dem og se,
+            hvordan jeg har arbejdet med at skabe dem.</p>
+        <div>
+            <div class="kat1">
+                <img src="billeder/portfolio/kat1.webp" alt="Tema 2">
+
+                <a href="tema2.html">Tema 2:<br>Grundlæggende web</a>
+            </div>
+
+            <div class="kat2">
+                <img src="billeder/portfolio/kat2.webp" alt="Tema 3">
+
+                <a href="tema3.html">Tema 3:<br>Grundlæggende UX/UI</a>
+            </div>
+
+            <div class="kat3">
+                <img src="billeder/portfolio/kat3.webp" alt="Tema 4">
+
+                <a href="tema4.html">Tema 4:<br>Animation</a>
+            </div>
+
+            <div class="kat4">
+                <img src="billeder/portfolio/kat4.webp" alt="Tema 5">
+
+                <a href="tema5.html">Tema 5:<br>Grundlæggende indhold</a>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer_menu">
+            <ul>
+                <li><a href="index.html">♡ Forside ♡</a></li>
+                <li><a href="portfolio.html">♡ Projekter ♡</a></li>
+                <li><a href="om_mig.html">♡ Om mig ♡</a></li>
+            </ul>
+        </div>
+
+        <div class="favicon_bot">
+            <a href="index.html"> <img src="billeder/baggrunde/Favicon.svg" alt="Favicon"></a>
+        </div>
+
+        <div class="footer_info">
+            <!-- popup vha. Chatgpt -->
+            <div class="popup" id="imagePopup">
+                <span class="close" id="closePopup">♡</span>
+                <img src="billeder/baggrunde/sitemap.webp" alt="Sitemap billede">
+            </div>
+
+            <ul>
+                <li><a href="#" id="imageLink">Sitemap</a></li>
+                <li>
+                    <p>Lavet af Miv Anna Berg</p>
+                </li>
+                <li id="mail"><a href="mailto:mibe0002@stud.kea.dk">Mibe0002@stud.kea.dk</a></li>
+                <!-- mailto er vha. chatgpt, dette gør, at vedkommende kan sende en mail direkte ved at klikke på min mail. -->
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/menu.js"></script>
+    <script src="js/sitemap.js"></script>
+    <script src="js/dropdown.js"></script>
 
 </body>
 
