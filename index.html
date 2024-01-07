@@ -17,15 +17,15 @@
 
 <body>
     <header>
-        <div class="favicon">
+        <div class="favicon_top">
             <a href="index.html"><img src="billeder/baggrunde/Favicon.svg" alt="Favicon"></a>
         </div>
 
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="portfolio.html">Projekter</a></li>
-                <li><a href="om_mig.html">Om mig</a></li>
+                <li><a href="index.html">♡ Forside ♡</a></li>
+                <li><a href="portfolio.html">♡ Projekter ♡</a></li>
+                <li><a href="om_mig.html">♡ Om mig ♡</a></li>
             </ul>
 
             <div class="burger">
@@ -38,67 +38,67 @@
 
     <main>
         <div>
-            <div class="logo">
-                <img src="billeder/baggrunde/Logo.svg" alt="Logo">
+            <div>
+                <div class="twobuttons">
+                    <a href="portfolio.html"><img src="billeder/baggrunde/Logo.svg" alt="Logo"></a>
+
+                    <div class="ddicon">
+                        <img src="billeder/baggrunde/scrolldrop_down.svg" alt="Drop down menu">
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <ul>
+                        <!-- br til at gå ned på næste linje -->
+                        <li><a href="tema2.html">Tema 2:<br>Grundlæggende web</a></li>
+                        <li><a href="tema3.html">Tema 3:<br>Grundlæggende UX/UI</a></li>
+                        <li><a href="tema4.html">Tema 4:<br>Animation</a></li>
+                        <li><a href="tema5.html">Tema 5:<br>Grundlæggende indhold</a></li>
+                    </ul>
+                </div>
+
+                <div class="twobuttons">
+                    <a href="om_mig.html"><img src="billeder/baggrunde/om_mig_knap.svg" alt="Om mig knap"></a>
+                </div>
             </div>
-
-            <div class="drop_menu">
-                <img src="billeder/baggrunde/scrolldrop_down.svg" alt="Drop down menu">
-
-                <ul>
-                    <li><a href="tema2.html">Tema 2: Grundlæggende web</a></li>
-
-                    <li><a href="tema3.html">Tema 3: Grundlæggende UX/UI</a></li>
-
-                    <li><a href="tema4.html">Tema 4: Animation</a></li>
-
-                    <li><a href="tema5.html">Tema 5: Grundlæggende indhold</a></li>
-                </ul>
-
-            </div>
-
-            <a href="om_mig.html">Om mig</a>
         </div>
-
-
     </main>
 
     <footer>
-        <img src="billeder/baggrunde/Favicon.svg" alt="Favicon">
-
         <div class="footer_menu">
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html"><img src="billeder/baggrunde/home.svg" alt="Forside"></a></li>
-                    <li><a href="portfolio.html"><img src="billeder/baggrunde/projekter.svg" alt="Projekter"></a></li>
-                    <li><a href="om_mig.html"><img src="billeder/baggrunde/profil.svg" alt="Profil"></a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="index.html">♡ Forside ♡</a></li>
+                <li><a href="portfolio.html">♡ Projekter ♡</a></li>
+                <li><a href="om_mig.html">♡ Om mig ♡</a></li>
+            </ul>
+        </div>
+
+        <div class="favicon_bot">
+            <a href="index.html"> <img src="billeder/baggrunde/Favicon.svg" alt="Favicon"></a>
         </div>
 
         <div class="footer_info">
+            <!-- popup vha. Chatgpt -->
+            <div class="popup" id="imagePopup">
+                <span class="close" id="closePopup">♡</span>
+                <img src="billeder/baggrunde/sitemap.png" alt="Sitemap billede">
+            </div>
+
             <ul>
                 <li><a href="#" id="imageLink">Sitemap</a></li>
                 <li>
                     <p>Lavet af Miv Anna Berg</p>
                 </li>
-                <li><a href="mailto:mibe0002@stud.kea.dk">Mibe0002@stud.kea.dk</a></li>
+                <li id="mail"><a href="mailto:mibe0002@stud.kea.dk">Mibe0002@stud.kea.dk</a></li>
                 <!-- mailto er vha. chatgpt, dette gør, at vedkommende kan sende en mail direkte ved at klikke på min mail. -->
             </ul>
-
-            <!-- popup vha. Chatgpt -->
-            <div class="popup" id="imagePopup">
-                <span class="close" id="closePopup">&times;</span>
-                <img src="billeder/baggrunde/sitemap.png" alt="Sitemap billede">
-            </div>
-
         </div>
-
     </footer>
 
     <!-- JavaScript -->
     <script src="js/menu.js"></script>
     <script src="js/sitemap.js"></script>
+    <script src="js/dropdown.js"></script>
 
 </body>
 
