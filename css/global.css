@@ -90,13 +90,15 @@ body {
   background-repeat: repeat-y;
   background-size: cover;
 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  overflow: auto;
 }
 
 main {
   margin: 10%;
+  flex: 1;
 }
 
 main a {
@@ -193,9 +195,8 @@ header nav ul {
 */
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: auto;
   background-image: url(../billeder/baggrunde/botframe.png);
   background-repeat: repeat-x;
   background-position: bottom;
@@ -203,6 +204,10 @@ footer {
   font-size: var(--body-m);
   font-family: var(--secondary-font);
   text-align: center;
+
+  bottom: 0;
+  width: 100%;
+  padding: 0 5.5%;
 }
 
 .favicon_bot {
@@ -216,20 +221,14 @@ footer {
   box-shadow: 0 0 10px var(--shadow);
 }
 
-.footer_menu {
-  margin-left: 5.5%;
-}
-
-.footer_info {
-  margin-right: 5.5%;
-}
-
 .footer_menu li {
   width: 156.183px;
+  margin: 10px 0;
 }
 
 .footer_info li {
   height: 21.6px;
+  margin: 10px 0;
 }
 
 .footer_menu li a {
@@ -247,7 +246,6 @@ footer {
 }
 
 /* popup */
-
 #imageLink,
 #mail {
   font-style: italic;
@@ -351,11 +349,10 @@ footer {
   }
 
   nav.active .menu li {
-    margin: 10px;
+    margin: 20px 10px;
   }
 
   /* style inden for main */
-
   /* to hoved knapper */
   .twobuttons {
     position: relative;
