@@ -119,6 +119,7 @@ main a {
 */
 .favicon_top img {
   width: 70px;
+  height: auto;
   border-radius: 14px;
   box-shadow: 0 0 30px var(--shadow);
 }
@@ -197,12 +198,15 @@ footer {
 
 .favicon_bot {
   display: block;
+  width: auto;
+  height: auto;
   padding: 0 0;
 }
 
 .favicon_bot img {
   min-width: 40px;
   max-width: 70px;
+  height: auto;
   border-radius: 14px;
   box-shadow: 0 0 30px var(--shadow);
 }
