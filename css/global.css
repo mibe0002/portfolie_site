@@ -269,6 +269,9 @@ footer {
 ************* mobil styles ************
 */
 @media (max-width: 800px) {
+  body {
+    background-size: contain;
+  }
   main {
     margin: 10%;
     flex: 1;
@@ -348,6 +351,34 @@ footer {
     margin: 20px 10px;
   }
 
+  /* texts */
+  h1 {
+    font-size: var(--font-h1ogbody-md);
+    font-family: var(--primary-font);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: var(--font-h2-m);
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-left: -14px;
+  }
+
+  main p {
+    font-size: var(--body-m);
+    font-family: var(--secondary-font);
+    margin: 30px auto;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    line-height: 140%;
+    max-width: 80ch;
+  }
+
+  main a {
+    font-size: var(--font-h2-m);
+  }
+
   /* 
   footer
   */
@@ -383,6 +414,14 @@ footer {
     text-decoration: none;
   }
 
+  /* :not(footer) p {
+    margin: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    line-height: 0;
+    max-width: none;
+  } */
+
   /* popup */
   .popup {
     box-shadow: 0 0 10px var(--shadow);
@@ -401,6 +440,24 @@ footer {
   main {
     margin: 1%;
     flex: 1;
+  }
+
+  h1 {
+    font-size: var(--font-h1-d);
+    font-family: var(--primary-font);
+    text-align: center;
+  }
+
+  main p {
+    font-size: var(--font-h1ogbody-md);
+    font-family: var(--secondary-font);
+    margin: 30px auto;
+    line-height: 160%;
+    max-width: 80ch;
+  }
+
+  main a {
+    font-size: var(--font-h2-d);
   }
 
   .footer_menu ul,

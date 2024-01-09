@@ -1,0 +1,119 @@
+h1 {
+  margin-bottom: -7px;
+}
+
+h2 {
+  margin-bottom: -7px;
+}
+
+main {
+  margin: 9%;
+  overflow: hidden;
+}
+
+main p {
+  margin: 20px auto;
+  margin-bottom: 10px;
+  max-width: 80ch;
+  width: 100%;
+
+  font-size: var(--body-m);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box img {
+  margin-bottom: 14px;
+  width: 105%;
+  max-width: 100%;
+  border-radius: 14px;
+  border: dashed var(--third-cl) 3px;
+}
+
+.box .last {
+  margin-bottom: 45px;
+}
+
+.box .pb {
+  width: 60%;
+  margin-bottom: 14px;
+}
+
+.beskrivelse {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* slideshow */
+.slideshow {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.slide {
+  display: none;
+  flex: 0 0 100%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 5px 10px 10px 20px;
+  background-color: var(--third-cl);
+  border-radius: 14px;
+  border: solid var(--primary-cl) 3px;
+}
+
+.active {
+  display: block;
+}
+
+.slide_nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: -5px 10px;
+  background-color: var(--secondary-cl);
+  border-radius: 50%;
+  border: dashed var(--third-cl) 3px;
+  margin-bottom: ;
+}
+
+.dot.active {
+  background-color: var(--primary-cl);
+  border: none;
+}
+
+.olast {
+  margin-top: 45px;
+}
+
+.nm {
+  margin-bottom: 0;
+}
+
+/* figur */
+.box .figure3 {
+  position: absolute;
+  width: 25%;
+  top: 204%;
+  right: 0%;
+  overflow: hidden;
+  border: none;
+  z-index: -1;
+}

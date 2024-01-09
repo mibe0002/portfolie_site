@@ -1,0 +1,111 @@
+/* mobile */
+h1 {
+  margin-bottom: 20px;
+}
+
+main {
+  margin: 9%;
+  overflow: hidden;
+}
+
+main p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  max-width: 80ch;
+  width: 104%;
+  margin-left: -14px;
+
+  font-size: var(--body-m);
+}
+
+.box ul li p {
+  margin-top: 0;
+  margin-left: -5px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.box img {
+  margin-bottom: 14px;
+  margin-left: -5%;
+  width: 105%;
+  max-width: 100%;
+  border-radius: 14px;
+  border: dashed var(--third-cl) 3px;
+}
+
+.box .last {
+  margin-bottom: 45px;
+}
+
+.box a {
+  min-width: 205px;
+  min-height: 76px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: solid var(--primary-cl) 3px;
+  background-color: var(--third-cl);
+}
+
+.compare img {
+  margin-left: -3%;
+  width: 105%;
+  border-radius: 14px;
+  border: dashed var(--third-cl) 3px;
+}
+
+.compare {
+  position: relative;
+  display: inline-block;
+}
+
+.compare .o {
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+.compare .t {
+  position: absolute;
+  top: 0;
+  right: -180px;
+}
+
+.link a {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  margin: 0 -20px;
+  color: var(--primary-cl);
+  font-family: var(--secondary-font);
+  font-size: var(--body-m);
+}
+
+/* tema3 */
+.ekstra {
+  margin-bottom: 45px;
+}
+
+.sbs {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 45px;
+}
+
+.box a.pdf {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  margin: 0 auto;
+  color: var(--primary-cl);
+  font-family: var(--secondary-font);
+  font-size: var(--body-m);
+}
+
+/* desktop */

@@ -1,0 +1,39 @@
+/* mobile */
+main p {
+  margin-left: 16%;
+}
+
+.kat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.kat img {
+  margin-bottom: 14px;
+  width: 100%;
+  border-radius: 14px;
+  border: dashed var(--third-cl) 3px;
+}
+
+.kat a {
+  min-width: 205px;
+  min-height: 76px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: solid var(--primary-cl) 3px;
+  background-color: var(--third-cl);
+}
+
+/* figur */
+.figure4 {
+  position: absolute;
+  width: 25%;
+  top: 103%;
+  right: 0%;
+  overflow: hidden;
+}
+
+/* desktop */
