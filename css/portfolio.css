@@ -37,3 +37,50 @@ main p {
 }
 
 /* desktop */
+@media (min-width: 801px) {
+  main {
+    margin: 1% 10%;
+    overflow: hidden;
+  }
+
+  main p {
+    margin: 45px auto;
+    max-width: 47ch;
+  }
+
+  .grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid a {
+    margin-bottom: 114px;
+  }
+
+  /* figur */
+  .figure4 {
+    position: absolute;
+    width: 9%;
+    top: 30%;
+    right: 20%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .kat a {
+    min-width: 205px;
+    min-height: 76px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: solid var(--primary-cl) 3px;
+    box-shadow: 0 0 10px var(--shadow);
+    background-color: var(--secondary-cl);
+  }
+
+  .kat a:hover {
+    background-color: var(--third-cl);
+  }
+}

@@ -91,7 +91,6 @@ main p {
   background-color: var(--secondary-cl);
   border-radius: 50%;
   border: dashed var(--third-cl) 3px;
-  margin-bottom: ;
 }
 
 .dot.active {
@@ -116,4 +115,144 @@ main p {
   overflow: hidden;
   border: none;
   z-index: -1;
+}
+
+/* desktop  */
+@media (min-width: 801px) {
+  body {
+    background-size: contain;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: var(--font-h2-d);
+    font-family: var(--primary-font);
+  }
+
+  main {
+    margin: 1% 10%;
+    overflow: hidden;
+  }
+
+  main p {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    max-width: 55ch;
+    width: 100%;
+    font-size: var(--font-h1ogbody-md);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .box .last {
+    margin-bottom: 60px;
+  }
+
+  .box .pb {
+    width: 50%;
+    margin: 14px auto;
+  }
+
+  #ned {
+    margin-top: 100px;
+  }
+
+  .beskrivelse {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  /* slideshow */
+  .slideshow {
+    position: relative;
+    margin-top: 125px;
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    margin: 0 50px;
+  }
+
+  .slide {
+    display: none;
+    flex: 0 0 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 5px 10px 10px 20px;
+    background-color: var(--third-cl);
+    border-radius: 14px;
+    border: solid var(--primary-cl) 3px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .slide_nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slide.active p {
+    margin-top: 5px;
+    max-width: 30ch;
+  }
+
+  .dot {
+    height: 20px;
+    width: 20px;
+    margin: -5px 10px;
+    background-color: var(--secondary-cl);
+    border-radius: 50%;
+    border: dashed var(--third-cl) 3px;
+  }
+
+  .dot.active {
+    background-color: var(--primary-cl);
+    border: none;
+  }
+
+  .olast {
+    margin-top: 45px;
+  }
+
+  .nm {
+    margin-bottom: 0;
+  }
+
+  /* figur */
+  .box .figure3 {
+    position: absolute;
+    width: 10%;
+    top: 200%;
+    right: 10%;
+    overflow: hidden;
+    border: none;
+    z-index: -1;
+  }
+
+  .min {
+    margin: 0 50px;
+  }
 }

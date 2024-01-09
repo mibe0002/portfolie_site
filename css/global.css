@@ -157,7 +157,6 @@ header nav ul {
 /*
 ************* footer ************
 */
-
 .footer_menu li {
   width: 156.183px;
   margin: 10px 0;
@@ -202,7 +201,8 @@ footer {
 }
 
 .favicon_bot img {
-  width: 70px;
+  min-width: 40px;
+  max-width: 70px;
   border-radius: 14px;
   box-shadow: 0 0 30px var(--shadow);
 }
@@ -460,13 +460,21 @@ footer {
     font-size: var(--font-h2-d);
   }
 
+  .footer_menu {
+    width: 614px;
+  }
+
   .footer_menu ul,
   .footer_info ul {
     display: flex;
   }
 
+  .footer_info ul {
+    min-width: 353px;
+  }
+
   .footer_menu ul {
-    width: 613.083px;
+    min-width: 353px;
     display: flex;
     justify-content: space-evenly;
   }

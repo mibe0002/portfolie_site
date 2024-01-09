@@ -109,3 +109,104 @@ main p {
 }
 
 /* desktop */
+@media (min-width: 801px) {
+  body {
+    background-size: contain;
+  }
+  h1 {
+    margin-bottom: 60px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: var(--font-h2-d);
+    font-family: var(--primary-font);
+  }
+
+  main {
+    margin: 1% 10%;
+    overflow: hidden;
+  }
+
+  main p {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    max-width: 80ch;
+    width: 100%;
+    font-size: var(--font-h1ogbody-md);
+  }
+
+  .box .last {
+    margin-bottom: 60px;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .compare {
+    position: relative;
+    display: inline-block;
+  }
+
+  .compare img {
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .compare .o {
+    position: absolute;
+    top: 0;
+    left: 160px;
+  }
+
+  .compare .t {
+    position: absolute;
+    top: 0;
+    right: -415px;
+  }
+
+  .desk {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .link a {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 -20px;
+    color: var(--primary-cl);
+    font-family: var(--secondary-font);
+    font-size: var(--font-h1ogbody-md);
+  }
+
+  .box a.pdf {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 auto;
+    color: var(--primary-cl);
+    font-family: var(--secondary-font);
+    font-size: var(--font-h1ogbody-md);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .sbs {
+    display: flex;
+    gap: 13px;
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 45px;
+  }
+}

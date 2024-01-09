@@ -27,3 +27,5 @@ function setActiveDot(index) {
     }
   });
 }
+
+// JavaScript til slideshows funktion er vha. Chatgpt

@@ -79,6 +79,14 @@
 ************* desktop styles ************
 */
 @media screen and (min-width: 801px) {
+  main {
+    margin: 1% 10%;
+    overflow: hidden;
+  }
+
+  .menu a {
+    width: 195px;
+  }
   .flex {
     display: flex;
     justify-content: center;
@@ -88,7 +96,8 @@
   .twobuttons {
     position: relative;
     margin: 50px;
-    width: 20%;
+    max-width: 20%;
+    min-width: 27%;
     border-radius: 28px;
     box-shadow: 0 0 30px var(--shadow);
   }
@@ -96,9 +105,9 @@
   /* figur */
   .figure1 {
     position: absolute;
-    width: 30%;
-    top: 30%;
-    right: 1%;
+    width: 10%;
+    top: 22%;
+    right: 6%;
   }
 
   /* dropdown menu */
@@ -147,6 +156,9 @@
     border: dashed var(--third-cl);
     border-radius: 14px;
     box-shadow: 0 0 10px var(--shadow);
+  }
+
+  .dropdown li:hover {
     background-color: var(--secondary-cl);
   }
 
